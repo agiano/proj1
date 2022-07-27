@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>geojson feature </title>
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <button>
+      <a style="text-decoration: none; color: black" href="../home/index.html"
+        >Home</a
+      >
+    </button>
+    <p>
+      features.goemetry.type:<input
+        id="input1"
+        type="text"
+        value="MultiPolygon"
+      />
+    </p>
+    <p>
+      features.goemetry.coordinates:
+      <br>
+      <input id="input2" type="text" value="" /><br>
+      <input id="input2.1" type="text" value="" /><br>
+      <input id="input2.2" type="text" value="" /><br>
+      <input id="input2.3" type="text" value="" /><br>
+      <input id="input2.4" type="text" value="" />
+    </p>
+    <p>features.properties.geo_id:<input id="input3" type="text" value="110" /></p>
+    <p>
+      features.properties.name_id:<input id="input4" type="text" value="2" />
+    </p>
+    <p>features.properties.name:<input id="input5" type="text" value="Rome" /></p>
+    <p>
+      features.properties.start_date:<input id="input6" type="text" value="dd/mm/-yyyy" />
+    </p>
+    <p>
+      features.properties.end_date:<input id="input7" type="text" value="dd/mm/yyyy" />
+    </p>
+    <br />
+    <br />
+
+    <button id="geoBtn">make feature</button>
+    <br />
+    <br />
+    <textarea id="textbox" name="textbox" rows="10" cols="50"></textarea>
+
+    <script src="./js.js"></script>
+  </body>
+</html>

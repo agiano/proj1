@@ -1,0 +1,66 @@
+:root {
+  --blue: rgb(52, 166, 179);
+  --transparentblue: rgba(52, 166, 179, 0.6);
+  --darkblue: rgb(53, 134, 169);
+  --transparentdarkblue: rgba(53, 134, 169, 0.6);
+  --red: #8e2727;
+  --darkred: #5c0000;
+  --yellow: #fff5a7;
+  --black: #3a3a3a;
+  --white: #ffffff;
+  --color: rgb(47, 115, 187);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif, serif;
+  /* color: var(--darkred); */
+}
+.grid-container {
+  background-image: url("./images/img1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.main-header {
+  height: auto;
+  width: 100%;
+  /* background-color: var(--transparentdarkblue); */
+  display: grid;
+  grid-template-columns: 40% repeat(4, 15%);
+}
+.main-header-title {
+  background-color: var(--transparentdarkblue);
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 5px 0px 5px 5px;
+  margin: 0;
+}
+.main-header-btn {
+  background-color: var(--transparentdarkblue);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.main-header-btn:hover {
+  background-color: var(--transparentblue);
+}
+.main-content {
+  height: auto;
+  width: 100%;
+}
+.main-content div {
+  margin: 0px;
+  padding: 20px;
+}

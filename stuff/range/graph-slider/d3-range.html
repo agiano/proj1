@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>d3 range slider</title>
+    <style>
+      .chart-container {
+        margin-top: 0px;
+        border-radius: 5px;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: #30363e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="range">selected range : []</div>
+    <div class="data">selected data length - 0</div>
+    <div class="chart-container"></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="/Users/alexandrosgiannopoulos/Desktop/All desktop/web-edits/project-1/stuff/d3-range-slider.js"></script>
+    <!-- <script src="/Users/alexandrosgiannopoulos/Desktop/All desktop/web-edits/project-1/stuff/original-d3-slider.js"></script> -->
+
+    <script>
+      d3.json(
+        "https://gist.githubusercontent.com/bumbeishvili/a0ab3299b4e4eb1557085317b9136ec1/raw/ba488da953d2fa0e64ff2469a209c520fd408055/dateData.json"
+      ).then((data) => {
+        new RangeSlider()
+          .container(".chart-container")
+          .svgWidth(window.innerWidth - 40)
+          .svgHeight(100)
+          .data(data)
+          .accessor((d) => new Date(d))
+          .onBrush((d) => {
+            d3.select(".range").html(
+              `range is [` +
+                d.range[0].toLocaleDateString("en") +
+                ", " +
+                d.range[1].toLocaleDateString("en") +
+                `]`
+            );
+            d3.select(".data").html(`selected data length - ` + d.data.length);
+          })
+          .render();
+      });
+    </script>
+  </body>
+</html>

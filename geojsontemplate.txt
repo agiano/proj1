@@ -1,0 +1,47 @@
+"features": [
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [all coords
+          [ first group
+            [
+              coords
+            ],
+            [
+              coords
+            ],
+            [
+              coords
+            ],
+            [
+              coords
+            ]
+          ],
+          [second group
+            [
+              coords
+            ],
+            [
+              coords
+            ],
+            [
+              coords
+            ],
+            [
+              coords
+            ]
+          ]
+        ]
+      ]
+    },
+    "properties": {
+      "geo_id": 103,
+      "name_id": 1,
+      "name": "Kingdom of Bosphorus",
+      "start_date": "02/01/-0310",
+      "end_date": "01/01/-0063"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+
+svg {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+rect.overlay {
+  stroke: rgb(0, 123, 255);
+}
+
+rect.selection {
+  stroke: none;
+  fill: rgb(255, 239, 67);
+  fill-opacity: 0.5;
+}
+
+#labelleft,
+#labelright {
+  dominant-baseline: hanging;
+  font-size: 12px;
+}
+
+#labelleft {
+  text-anchor: end;
+}
+
+#labelright {
+  text-anchor: start;
+}
